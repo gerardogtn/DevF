@@ -33,9 +33,9 @@ void printBackwards(string input, char toCount){
     int charCount = 0;
     
     // If toCount is letter, sets toCountOtherCase to the other case of the char.
-    if (toCount < 90 && toCount > 65) {
+    if (toCount <= 90 && toCount >= 65) {
         toCountOtherCase = toCount + 32;
-    } else if(toCount < 122 && toCount > 97){
+    } else if(toCount <= 122 && toCount >= 97){
         toCountOtherCase = toCount - 32;
     }
     
