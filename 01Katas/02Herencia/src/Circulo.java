@@ -1,7 +1,7 @@
 /**
  * Created by gerardogtn on 6/17/15.
  */
-public class Circulo extends Figura {
+public class Circulo extends Figura{
     private double radio = 1.0;
 
     public Circulo(){
@@ -25,6 +25,7 @@ public class Circulo extends Figura {
     // REQUIRES: None.
     // MODIFIES: None.
     // EFFECTS: Return the circle's perimeter.
+    @Override
     public double getPerimetro(){
         return Math.PI * 2 * radio;
     }
@@ -32,13 +33,15 @@ public class Circulo extends Figura {
     // REQUIRES: None.
     // MODIFIES: None.
     // EFFECTS:  Return the circle's area.
+    @Override
     public double getArea(){
         return Math.PI * radio * radio;
     }
 
     // REQUIRES: None.
     // MODIFIES: None.
-    // EFFECTS:  Returns a string representation of a circle. 
+    // EFFECTS:  Returns a string representation of a circle.
+    @Override
     public String toString(){
         return ""; //STUB
     }
