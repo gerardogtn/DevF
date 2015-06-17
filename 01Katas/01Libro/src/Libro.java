@@ -60,4 +60,16 @@ public class Libro {
             System.out.println(autores[i]);
         }
     }
+
+    // REQUIRES: None
+    // MODIFIES: this
+    // EFFECTS:  Adds an Author to this.autores
+    public void addAutor(Autor autor) throws IndexOutOfBoundsException {
+        if(this.numAutores < 5){
+            this.autores[numAutores] = autor;
+            numAutores++;
+        } else{
+            throw new IndexOutOfBoundsException("El numero maximo de autores es 5.");
+        }
+    }
 }
