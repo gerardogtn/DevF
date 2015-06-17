@@ -24,4 +24,12 @@ public abstract class Figura {
     public String toString(){
         return ""; //STUB
     }
+
+    protected double getArea(){
+        return 0.0; //STUB
+    }
+
+    protected double getPerimetro(){
+        return 0.0; //STUB
+    }
 }
