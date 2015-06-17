@@ -35,4 +35,29 @@ public class Libro {
     public void setPrecio(double precio){
         this.precio = precio;
     }
+
+    public int getCantidadStock(){
+        return this.cantidadStock;
+    }
+
+    public void setCantidadStock(int stockAmount){
+        this.cantidadStock = stockAmount;
+    }
+
+    public String toString(){
+        return ""; //STUB
+    }
+
+    // REQUIRES: None.
+    // MODIFIES: None.
+    // EFFECTS:  Prints to console the authors of a book.
+    public void printAutores(){
+        System.out.print("Los autores del libro: ");
+        System.out.print(getNombre());
+        System.out.println(" son: ");
+
+        for (int i = 0; i < this.numAutores; i++){
+            System.out.println(autores[i]);
+        }
+    }
 }
