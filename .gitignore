@@ -53,3 +53,8 @@ build/
 *~
 *.dat
 *.dep
+
+# Intellij
+.idea/
+*.iml
+*.iws
