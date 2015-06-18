@@ -35,22 +35,21 @@ public class Cuadrado {
     }
 
     // REQUIRES: None.
-    // MODIFIES: this.
-    // INVARIANT: rectangulo.setAlto == rectangulo.setAncho
-    // EFFECTS: Sets this.lado to lado.
+    // MODIFIES: None.
+    // EFFECTS: Get either rectangulo.getAlto or rectangulo.getAncho
     public double getLado(){
-        double lado = rectangulo.getAlto();
-        assert lado == rectangulo.getAncho();
-        return lado;
+        return rectangulo.getAlto();
     }
 
     // REQUIRES: None.
     // MODIFIES: this.
-    // INVARIANT: rectangulo.setAlto == rectangulo.setAncho
-    // EFFECTS: Sets this.lado to lado.
+    // INVARIANT: rectangulo.getAlto == rectangulo.getAncho
+    // EFFECTS: Sets this.rectangulo height and width to lado.
     public void setLado(double lado){
+        assert rectangulo.getAncho() == rectangulo.getAlto();
         rectangulo.setAlto(lado);
         rectangulo.setAncho(lado);
+        assert rectangulo.getAncho() == rectangulo.getAlto();
     }
 
     // REQUIRES: None.
