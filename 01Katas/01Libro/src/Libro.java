@@ -65,7 +65,8 @@ public class Libro {
     // MODIFIES: this
     // EFFECTS:  Adds an Author to this.autores
     public void addAutor(Autor autor) throws IndexOutOfBoundsException {
-        if(this.numAutores < 5){
+        int maxAutores = autores.length;
+        if(this.numAutores < maxAutores){
             this.autores[numAutores] = autor;
             numAutores++;
         } else{
