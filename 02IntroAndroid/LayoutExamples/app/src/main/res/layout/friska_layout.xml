@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:background="@drawable/viejito_compu"
+    android:backgroundTintMode="multiply"
+    android:backgroundTint="#2B40BD"
+    android:alpha="0.8">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="5"
+        android:src="@drawable/friska"
+        android:contentDescription="@string/login_background"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+
+        android:paddingRight="20dp"
+        android:paddingLeft="60dp"
+
+        android:textColorHint="#FFFFFF"
+        android:hint="@string/username"
+        android:textColor="#FFFFFF"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+
+        android:paddingRight="20dp"
+        android:paddingLeft="60dp"
+
+
+        android:textColorHint="#FFFFFF"
+        android:hint="@string/password"
+        android:textColor="#FFFFFF"
+        />
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center|top"
+
+        android:paddingTop="@dimen/forgot_password_vertical_padding"
+        android:paddingBottom="@dimen/forgot_password_vertical_padding"
+
+        android:textColor="#FFFFFF"
+        android:text="@string/forgot_password"
+        />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ff18aa18"
+        android:gravity="center"
+
+        android:paddingTop="30dp"
+        android:paddingBottom="30dp"
+
+        android:textColor="#FFFFFF"
+        android:textAllCaps="false"
+        android:text="Create an account"
+        />
+</LinearLayout>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/green_blue_gradient">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3"
+        android:contentDescription="@string/what_song_logo"
+        android:src="@drawable/what_song_logo"
+        android:scaleType="centerInside"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:paddingLeft="35dp"
+        android:paddingRight="35dp"
+        android:textColorHint="#FFFFFF"
+        android:hint="@string/name_shortcut"/>
+
+    <Spinner
+        android:id="@+id/music_provider"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:paddingLeft="35dp"
+        android:paddingRight="35dp">
+
+    </Spinner>
+
+    <Spinner
+        android:id="@+id/choose_icon"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:paddingLeft="35dp"
+        android:paddingRight="35dp"
+        >
+
+    </Spinner>
+
+    <android.support.design.widget.FloatingActionButton
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right|bottom"
+        android:padding="50dp"
+        app:elevation="10dp"/>
+
+</LinearLayout>
