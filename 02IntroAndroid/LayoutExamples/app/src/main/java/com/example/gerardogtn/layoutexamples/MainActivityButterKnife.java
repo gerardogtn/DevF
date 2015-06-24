@@ -31,7 +31,7 @@ public class MainActivityButterKnife extends AppCompatActivity{
 
     @OnClick(R.id.btn_create_account)
     public void createAccount(){
-        Toast.makeText(this, "Imprimiendo con ButterKnife.", Toast.LENGTH_SHORT);
+        Toast.makeText(this, "Imprimiendo con ButterKnife.", Toast.LENGTH_SHORT).show();
     }
 
     @Override
