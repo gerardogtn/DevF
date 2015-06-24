@@ -16,4 +16,14 @@
         <item name="android:icon">@color/icons</item>
     </style>
 
+    <style name="MinhaConta" parent="Theme.AppCompat.Light">
+        <item name="colorPrimary">@color/primary_mc</item>
+        <item name="colorPrimaryDark">@color/primary_dark_mc</item>
+        <item name="colorAccent">@color/accent_mc</item>
+        <item name="android:navigationBarColor" tools:targetApi="21">@color/primary_dark_mc</item>
+        <item name="android:textColorPrimary">@color/primary_text_mc</item>
+        <item name="android:textColorSecondary">@color/secondary_text_mc</item>
+        <item name="android:divider">@color/divider_mc</item>
+        <item name="android:icon">@color/icons_mc</item>
+    </style>
 </resources>

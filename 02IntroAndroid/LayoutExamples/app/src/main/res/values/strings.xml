@@ -12,6 +12,9 @@
     <string name="viejito_compu_content_description">viejito compu background image</string>
     <string name="what_song_logo">What Song Logo</string>
     <string name="name_shortcut">Name your shortcut</string>
+    <string name="minha_conta_logo">minha conta logo</string>
+    <string name="minha_conta_background">minha conta background</string>
+    <string name="minha_conta_description">Acceda al sistema y visualize sus datos</string>
 
     <string-array name="music_providers">
         <item>Itunes</item>

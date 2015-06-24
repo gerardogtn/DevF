@@ -30,6 +30,7 @@
             />
 
         <EditText
+            android:id="@+id/etxt_username"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
@@ -43,6 +44,7 @@
             />
 
         <EditText
+            android:id="@+id/etxt_password"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
@@ -58,6 +60,7 @@
 
 
         <TextView
+            android:id="@+id/txt_forgot_password"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center|top"
@@ -71,6 +74,7 @@
             />
 
         <Button
+            android:id="@+id/btn_create_account"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="#ff18aa18"
@@ -83,6 +87,7 @@
             android:textAllCaps="false"
             android:textSize="20sp"
             android:text="@string/create_account"
+
             />
     </LinearLayout>
 
