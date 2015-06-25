@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.Toast;
 
 import butterknife.ButterKnife;
 import butterknife.InjectView;
@@ -35,6 +36,8 @@ public class FormActivity extends AppCompatActivity {
         if (isInputValid()) {
             Intent homeActivity = new Intent(this, HomeActivity.class);
             startActivity(homeActivity);
+        } else {
+            Toast.makeText(this, "Some fields are empty or there is a password mismatch", Toast.LENGTH_SHORT).show();
         }
     }
 

@@ -48,6 +48,8 @@ public class MainActivityButterKnife extends AppCompatActivity{
         if (isInputValid()) {
             Intent homeActivity = new Intent(this, HomeActivity.class);
             startActivity(homeActivity);
+        } else {
+            Toast.makeText(this, "Your username or password is incorrect.", Toast.LENGTH_SHORT).show();
         }
     }
 
