@@ -45,8 +45,20 @@ public class MainActivityButterKnife extends AppCompatActivity{
 
     @OnClick(R.id.btn_sign_in)
     public void signIn(){
-        Intent homeActivity = new Intent(this, HomeActivity.class);
-        startActivity(homeActivity);
+        if (isInputValid()) {
+            Intent homeActivity = new Intent(this, HomeActivity.class);
+            startActivity(homeActivity);
+        }
+    }
+
+    // REQUIRES: None.
+    // MODIFIES: None.
+    // EFFECTS: Returns true iff no field is empty.
+    private boolean isInputValid() {
+        boolean output;
+        output = !mUserName.getText().toString().isEmpty();
+        output = output && !mPassword.getText().toString().isEmpty();
+        return output;
     }
 
     @Override
