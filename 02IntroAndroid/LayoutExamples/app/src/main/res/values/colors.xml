@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 
 <resources>
-    <color name="blue_blur">#8d2196f3</color>
+    <color name="blue_blur">#8D03A9F4</color>
 
     <color name="primary">#009688</color>
     <color name="primary_dark">#00796B</color>
@@ -20,4 +20,7 @@
     <color name="secondary_text_mc">#727272</color>
     <color name="icons_mc">#FFFFFF</color>
     <color name="divider_mc">#B6B6B6</color>
+
+    <color name="green_create_account">#4CAF50</color>
+    <color name="red_sign_in">#F44336</color>
 </resources>

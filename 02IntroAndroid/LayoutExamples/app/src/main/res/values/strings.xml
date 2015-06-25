@@ -19,6 +19,7 @@
     <string name="email_address">Email address</string>
     <string name="first_name">First name</string>
     <string name="last_name">Last name</string>
+    <string name="sign_in">Sign in</string>
 
     <string-array name="music_providers">
         <item>Itunes</item>
