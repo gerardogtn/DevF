@@ -5,48 +5,13 @@
     android:orientation="vertical"
     android:background="#FFFFFFFF">
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:paddingLeft="@dimen/friska_form_left_margin"
-        android:paddingTop="20dp">
-
-        <android.support.design.widget.TextInputLayout
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1">
-            <EditText
-                android:id="@+id/etxt_first_name"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:hint="@string/first_name" />
-        </android.support.design.widget.TextInputLayout>
-
-        <android.support.design.widget.TextInputLayout
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:paddingRight="@dimen/friska_form_right_margin">
-            <EditText
-                android:id="@+id/etxt_last_name"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:hint="@string/last_name" />
-
-        </android.support.design.widget.TextInputLayout>
-
-
-    </LinearLayout>
-
     <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
         android:layout_marginRight="@dimen/friska_form_right_margin"
         android:paddingLeft="@dimen/friska_form_left_margin"
-        android:paddingTop="20dp">
+        android:paddingTop="@dimen/friska_form_top_padding">
 
 
         <LinearLayout
@@ -54,9 +19,43 @@
             android:layout_height="wrap_content"
             android:orientation="vertical">
 
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+                    <EditText
+                        android:id="@+id/etxt_first_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:hint="@string/first_name" />
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+                    <EditText
+                        android:id="@+id/etxt_last_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:hint="@string/last_name" />
+
+                </android.support.design.widget.TextInputLayout>
+
+
+            </LinearLayout>
+
             <android.support.design.widget.TextInputLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content">
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:paddingTop="@dimen/friska_form_top_padding">
                 <EditText
                     android:id="@+id/etxt_password1"
                     android:layout_width="match_parent"
@@ -70,7 +69,8 @@
 
             <android.support.design.widget.TextInputLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content">
+                android:layout_height="0dp"
+                android:layout_weight="1">
                 <EditText
                     android:id="@+id/etxt_password2"
                     android:layout_width="match_parent"
@@ -84,7 +84,9 @@
 
             <android.support.design.widget.TextInputLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content">
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:paddingTop="@dimen/friska_form_top_padding">
                 <EditText
                     android:id="@+id/etxt_phone_number"
                     android:layout_width="match_parent"
@@ -96,7 +98,9 @@
 
             <android.support.design.widget.TextInputLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content">
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:paddingTop="@dimen/friska_form_top_padding">
                 <EditText
                     android:id="@+id/etxt_email"
                     android:layout_width="match_parent"
@@ -106,18 +110,19 @@
 
             </android.support.design.widget.TextInputLayout>
 
-            <Button
-                android:id="@+id/btn_create_sign_in"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:background="@color/green_create_account"
-                android:paddingTop="15dp"
-                android:paddingBottom="15dp"
-                android:textAllCaps="false"
-                android:textColor="#FFFFFF"
-                android:text="Create account and sign in"/>
         </LinearLayout>
     </ScrollView>
+
+    <Button
+        android:id="@+id/btn_create_sign_in"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/green_create_account"
+        android:paddingTop="15dp"
+        android:paddingBottom="15dp"
+        android:textAllCaps="false"
+        android:textColor="#FFFFFF"
+        android:text="Create account and sign in"/>
 
 
 </LinearLayout>
