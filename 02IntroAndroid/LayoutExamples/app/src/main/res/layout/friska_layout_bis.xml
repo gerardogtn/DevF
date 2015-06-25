@@ -31,11 +31,13 @@
 
 
         <android.support.design.widget.TextInputLayout
+            xmlns:app="http://schemas.android.com/apk/res-auto"
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_weight="2"
-            android:paddingRight="20dp"
-            android:paddingLeft="60dp">
+            android:paddingRight="@dimen/friska_home_right_padding"
+            android:paddingLeft="@dimen/friska_home_left_padding"
+            app:hintTextAppearance="@style/WhiteTextInputLayout">
 
             <EditText
                 android:id="@+id/etxt_username"
@@ -50,12 +52,14 @@
         </android.support.design.widget.TextInputLayout>
 
         <android.support.design.widget.TextInputLayout
+            xmlns:app="http://schemas.android.com/apk/res-auto"
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_weight="2"
             android:paddingTop="15dp"
-            android:paddingRight="20dp"
-            android:paddingLeft="60dp">
+            android:paddingRight="@dimen/friska_home_right_padding"
+            android:paddingLeft="@dimen/friska_home_left_padding"
+            app:hintTextAppearance="@style/WhiteTextInputLayout">
 
             <EditText
                 android:inputType="textPassword"
