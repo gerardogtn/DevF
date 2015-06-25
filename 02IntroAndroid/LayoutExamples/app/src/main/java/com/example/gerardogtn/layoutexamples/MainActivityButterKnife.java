@@ -17,6 +17,8 @@ import butterknife.OnClick;
  */
 public class MainActivityButterKnife extends AppCompatActivity{
 
+
+    @InjectView(R.id.btn_sign_in) protected Button mSignIn;
     @InjectView(R.id.etxt_username) protected EditText mUserName;
     @InjectView(R.id.etxt_password) protected EditText mPassword;
     @InjectView(R.id.txt_forgot_password) protected TextView mForgotPassword;
@@ -39,6 +41,12 @@ public class MainActivityButterKnife extends AppCompatActivity{
     public void createAccount(){
         Intent intent = new Intent(this, FormActivity.class);
         startActivity(intent);
+    }
+
+    @OnClick(R.id.btn_sign_in)
+    public void signIn(){
+        Intent homeActivity = new Intent(this, HomeActivity.class);
+        startActivity(homeActivity);
     }
 
     @Override
