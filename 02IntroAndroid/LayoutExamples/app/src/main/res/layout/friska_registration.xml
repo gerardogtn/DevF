@@ -9,23 +9,33 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        android:paddingLeft="40dp"
+        android:paddingLeft="@dimen/friska_form_left_margin"
         android:paddingTop="20dp">
 
-        <EditText
+        <android.support.design.widget.TextInputLayout
             android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:hint="@string/first_name" />
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:hint="@string/first_name" />
+        </android.support.design.widget.TextInputLayout>
 
-        <EditText
+        <android.support.design.widget.TextInputLayout
             android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_marginLeft="15dp"
-            android:layout_marginRight="20dp"
+            android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:paddingRight="@dimen/friska_form_right_margin">
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:hint="@string/last_name" />
 
-            android:hint="@string/last_name" />
+        </android.support.design.widget.TextInputLayout>
+
 
     </LinearLayout>
 
@@ -42,34 +52,43 @@
             android:layout_height="wrap_content"
             android:orientation="vertical">
 
-            <EditText
+            <android.support.design.widget.TextInputLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:paddingTop="@dimen/friska_form_padding"
-                android:hint="@string/password" />
+                android:layout_height="wrap_content">
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="@dimen/friska_form_padding"
+                    android:hint="@string/password" />
 
-            <EditText
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:paddingTop="@dimen/friska_form_padding"
-                android:hint="@string/password" />
+            </android.support.design.widget.TextInputLayout>
 
-            <EditText
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:paddingTop="@dimen/friska_form_padding"
-                android:hint="@string/txt_phone_number" />
-
-            <EditText
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:paddingTop="@dimen/friska_form_padding"
-                android:hint="@string/email_address"/>
 
             <android.support.design.widget.TextInputLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:paddingTop="@dimen/friska_form_padding">
+                android:layout_height="wrap_content">
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="@dimen/friska_form_padding"
+                    android:hint="@string/password" />
+
+            </android.support.design.widget.TextInputLayout>
+
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="@dimen/friska_form_padding"
+                    android:hint="@string/txt_phone_number" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
                 <EditText
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
