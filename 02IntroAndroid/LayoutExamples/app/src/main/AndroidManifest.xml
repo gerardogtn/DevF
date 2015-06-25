@@ -21,6 +21,10 @@
             android:name=".FormActivity"
             android:label="Sign up"/>
 
+        <activity
+            android:name=".HomeActivity"
+            android:label="Home"/>
+
     </application>
 
 </manifest>
