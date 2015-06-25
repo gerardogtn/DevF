@@ -21,8 +21,7 @@
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="0dp"
-                android:layout_weight="1"
+                android:layout_height="wrap_content"
                 android:orientation="horizontal">
 
                 <android.support.design.widget.TextInputLayout
@@ -53,14 +52,12 @@
 
             <android.support.design.widget.TextInputLayout
                 android:layout_width="match_parent"
-                android:layout_height="0dp"
-                android:layout_weight="1"
+                android:layout_height="wrap_content"
                 android:paddingTop="@dimen/friska_form_top_padding">
                 <EditText
                     android:id="@+id/etxt_password1"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:paddingTop="@dimen/friska_form_padding"
+                    android:layout_height="match_parent"
                     android:hint="@string/password"
                     android:inputType="textPassword" />
 
@@ -69,13 +66,11 @@
 
             <android.support.design.widget.TextInputLayout
                 android:layout_width="match_parent"
-                android:layout_height="0dp"
-                android:layout_weight="1">
+                android:layout_height="wrap_content">
                 <EditText
                     android:id="@+id/etxt_password2"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:paddingTop="@dimen/friska_form_padding"
+                    android:layout_height="match_parent"
                     android:hint="@string/password"
                     android:inputType="textPassword"/>
 
@@ -84,27 +79,24 @@
 
             <android.support.design.widget.TextInputLayout
                 android:layout_width="match_parent"
-                android:layout_height="0dp"
-                android:layout_weight="1"
+                android:layout_height="wrap_content"
                 android:paddingTop="@dimen/friska_form_top_padding">
                 <EditText
                     android:id="@+id/etxt_phone_number"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:paddingTop="@dimen/friska_form_padding"
+                    android:layout_height="match_parent"
                     android:hint="@string/txt_phone_number"
                     android:inputType="phone" />
             </android.support.design.widget.TextInputLayout>
 
             <android.support.design.widget.TextInputLayout
                 android:layout_width="match_parent"
-                android:layout_height="0dp"
-                android:layout_weight="1"
+                android:layout_height="wrap_content"
                 android:paddingTop="@dimen/friska_form_top_padding">
                 <EditText
                     android:id="@+id/etxt_email"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
+                    android:layout_height="match_parent"
                     android:hint="@string/email_address"
                     android:inputType="textEmailAddress"/>
 
