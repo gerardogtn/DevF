@@ -4,4 +4,7 @@
     <dimen name="activity_vertical_margin">16dp</dimen>
 
     <dimen name="forgot_password_vertical_padding">25dp</dimen>
+    <dimen name="friska_form_padding">25dp</dimen>
+    <dimen name="friska_form_left_margin">40dp</dimen>
+    <dimen name="friska_form_right_margin">15dp</dimen>
 </resources>

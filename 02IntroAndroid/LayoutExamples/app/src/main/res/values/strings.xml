@@ -15,6 +15,10 @@
     <string name="minha_conta_logo">minha conta logo</string>
     <string name="minha_conta_background">minha conta background</string>
     <string name="minha_conta_description">Acceda al sistema y visualize sus datos</string>
+    <string name="txt_phone_number">Phone Number</string>
+    <string name="email_address">Email address</string>
+    <string name="first_name">First name</string>
+    <string name="last_name">Last name</string>
 
     <string-array name="music_providers">
         <item>Itunes</item>

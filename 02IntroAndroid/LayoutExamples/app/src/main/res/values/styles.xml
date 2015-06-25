@@ -16,7 +16,7 @@
         <item name="android:icon">@color/icons</item>
     </style>
 
-    <style name="MinhaConta" parent="Theme.AppCompat.Light">
+    <style name="MinhaConta" parent="Theme.AppCompat.Light.DarkActionBar">
         <item name="colorPrimary">@color/primary_mc</item>
         <item name="colorPrimaryDark">@color/primary_dark_mc</item>
         <item name="colorAccent">@color/accent_mc</item>
