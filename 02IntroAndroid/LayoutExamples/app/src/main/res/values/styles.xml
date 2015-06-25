@@ -26,4 +26,8 @@
         <item name="android:divider">@color/divider_mc</item>
         <item name="android:icon">@color/icons_mc</item>
     </style>
+
+    <style name="WhiteTextInputLayout" parent="@android:style/TextAppearance">
+        <item name="android:textColor">#FFFFFF</item>
+    </style>
 </resources>
