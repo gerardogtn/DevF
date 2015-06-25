@@ -114,7 +114,7 @@
         android:paddingBottom="15dp"
         android:textAllCaps="false"
         android:textColor="#FFFFFF"
-        android:text="Create account and sign in"/>
+        android:text="@string/create_and_signin"/>
 
 
 </LinearLayout>

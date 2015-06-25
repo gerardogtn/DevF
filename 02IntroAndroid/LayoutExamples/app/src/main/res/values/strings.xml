@@ -20,6 +20,7 @@
     <string name="first_name">First name</string>
     <string name="last_name">Last name</string>
     <string name="sign_in">Sign in</string>
+    <string name="create_and_signin">Create account and sign in</string>
 
     <string-array name="music_providers">
         <item>Itunes</item>
