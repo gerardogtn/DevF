@@ -95,32 +95,13 @@
 
         <Button
             android:id="@+id/btn_sign_in"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:paddingTop="15dp"
-            android:paddingBottom="15dp"
-            android:background="@color/red_sign_in"
-
-            android:textColor="#FFFFFF"
-            android:textAllCaps="false"
-            android:textSize="20sp"
+            style="@style/RedLargeButton"
             android:text="@string/sign_in"
             />
         <Button
             android:id="@+id/btn_create_account"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="#ff18aa18"
-            android:gravity="center"
-
-            android:paddingTop="15dp"
-            android:paddingBottom="15dp"
-
-            android:textColor="#FFFFFF"
-            android:textAllCaps="false"
-            android:textSize="20sp"
+            style="@style/GreenLargeButton"
             android:text="@string/create_account"
-
             />
     </LinearLayout>
 
