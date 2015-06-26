@@ -10,4 +10,5 @@
     <dimen name="friska_form_top_padding">20dp</dimen>
     <dimen name="friska_home_left_padding">60dp</dimen>
     <dimen name="friska_home_right_padding">20dp</dimen>
+    <dimen name="large_button_top_bottom_padding">15dp</dimen>
 </resources>
