@@ -6,7 +6,7 @@
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
-        android:theme="@style/MinhaConta" >
+        android:theme="@style/Friska" >
         <activity
             android:name=".MainActivityButterKnife"
             android:label="@string/app_name" >
