@@ -30,4 +30,23 @@
     <style name="WhiteTextInputLayout" parent="@android:style/TextAppearance">
         <item name="android:textColor">#FFFFFF</item>
     </style>
+
+    <style name="LargeButton" parent="Base.Widget.AppCompat.Button">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingTop">@dimen/large_button_top_bottom_padding</item>
+        <item name="android:paddingBottom">@dimen/large_button_top_bottom_padding</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="GreenLargeButton" parent="LargeButton">
+        <item name="android:background">@color/green_create_account</item>
+    </style>
+
+    <style name="RedLargeButton" parent="LargeButton">
+        <item name="android:background">@color/red_sign_in</item>
+    </style>
 </resources>
