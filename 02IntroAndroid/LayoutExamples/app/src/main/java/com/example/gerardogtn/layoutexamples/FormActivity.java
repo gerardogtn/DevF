@@ -33,12 +33,15 @@ public class FormActivity extends AppCompatActivity {
 
     @OnClick(R.id.btn_create_sign_in)
     public void signIn(){
-        if (isInputValid()) {
+        if (isFieldEmpty()){
+            Toast.makeText(this, "Some fields are empty.", Toast.LENGTH_SHORT).show();
+        } else if (!doPasswordsMatch()){
+            Toast.makeText(this, "Passwords do not match", Toast.LENGTH_SHORT).show();
+        } else{
             Intent homeActivity = new Intent(this, HomeActivity.class);
             startActivity(homeActivity);
-        } else {
-            Toast.makeText(this, "Some fields are empty or there is a password mismatch", Toast.LENGTH_SHORT).show();
         }
+
     }
 
     // REQUIRES: None.
@@ -54,6 +57,27 @@ public class FormActivity extends AppCompatActivity {
         output = output && !mPhoneNumber.getText().toString().isEmpty();
         output = output && !mEmail.getText().toString().isEmpty();
 
-        return output; // STUB
+        return output;
+    }
+
+    // REQUIRES: None.
+    // MODIFIES: None.
+    // EFFECTS: Returns true if any of the fields is empty. False otherwise.
+    private boolean isFieldEmpty(){
+        boolean output;
+        output = mFirstName.getText().toString().isEmpty();
+        output = output || mLastName.getText().toString().isEmpty();
+        output = output || mPassword1.getText().toString().isEmpty();
+        output = output || mPassword2.getText().toString().isEmpty();
+        output = output || mPhoneNumber.getText().toString().isEmpty();
+        output = output || mEmail.getText().toString().isEmpty();
+        return output;
+    }
+
+    // REQUIRES: None.
+    // MODIFIES: None.
+    // EFFECTS:  Returns true if both passwords have the same text. False otherwise.
+    private boolean doPasswordsMatch(){
+        return mPassword1.getText().toString().equals(mPassword2.getText().toString());
     }
 }
