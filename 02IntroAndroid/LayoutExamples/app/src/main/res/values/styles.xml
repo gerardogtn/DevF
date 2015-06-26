@@ -16,7 +16,7 @@
         <item name="android:icon">@color/icons</item>
     </style>
 
-    <style name="MinhaConta" parent="Theme.AppCompat.Light.DarkActionBar">
+    <style name="Friska" parent="Theme.AppCompat.Light.DarkActionBar">
         <item name="colorPrimary">@color/primary_mc</item>
         <item name="colorPrimaryDark">@color/primary_dark_mc</item>
         <item name="colorAccent">@color/accent_mc</item>
@@ -25,6 +25,11 @@
         <item name="android:textColorSecondary">@color/secondary_text_mc</item>
         <item name="android:divider">@color/divider_mc</item>
         <item name="android:icon">@color/icons_mc</item>
+    </style>
+
+
+    <style name="FriskaLogIn" parent="Friska">
+        <item name="colorAccent">#FFFFFF</item>
     </style>
 
     <style name="WhiteTextInputLayout" parent="@android:style/TextAppearance">
