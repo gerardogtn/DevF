@@ -29,9 +29,8 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1">
                     <EditText
+                        style="@style/FriskaRegistrationEditText"
                         android:id="@+id/etxt_first_name"
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
                         android:hint="@string/first_name" />
                 </android.support.design.widget.TextInputLayout>
 
@@ -40,9 +39,8 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1">
                     <EditText
+                        style="@style/FriskaRegistrationEditText"
                         android:id="@+id/etxt_last_name"
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
                         android:hint="@string/last_name" />
 
                 </android.support.design.widget.TextInputLayout>
@@ -51,13 +49,10 @@
             </LinearLayout>
 
             <android.support.design.widget.TextInputLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:paddingTop="@dimen/friska_form_top_padding">
+                style="@style/FriskaRegistrationTextInputLayout.Padding">
                 <EditText
+                    style="@style/FriskaRegistrationEditText"
                     android:id="@+id/etxt_password1"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
                     android:hint="@string/password"
                     android:inputType="textPassword" />
 
@@ -65,12 +60,11 @@
 
 
             <android.support.design.widget.TextInputLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content">
+                style="@style/FriskaRegistrationTextInputLayout">
+
                 <EditText
+                    style="@style/FriskaRegistrationEditText"
                     android:id="@+id/etxt_password2"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
                     android:hint="@string/password"
                     android:inputType="textPassword"/>
 
@@ -78,25 +72,19 @@
 
 
             <android.support.design.widget.TextInputLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:paddingTop="@dimen/friska_form_top_padding">
+                style="@style/FriskaRegistrationTextInputLayout.Padding">
                 <EditText
+                    style="@style/FriskaRegistrationEditText"
                     android:id="@+id/etxt_phone_number"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
                     android:hint="@string/txt_phone_number"
                     android:inputType="phone" />
             </android.support.design.widget.TextInputLayout>
 
             <android.support.design.widget.TextInputLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:paddingTop="@dimen/friska_form_top_padding">
+                style="@style/FriskaRegistrationTextInputLayout.Padding">
                 <EditText
+                    style="@style/FriskaRegistrationEditText"
                     android:id="@+id/etxt_email"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
                     android:hint="@string/email_address"
                     android:inputType="textEmailAddress"/>
 
