@@ -27,7 +27,7 @@ public class FormActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.friska_registration);
+        setContentView(R.layout.friska_form);
         ButterKnife.inject(this);
     }
 
