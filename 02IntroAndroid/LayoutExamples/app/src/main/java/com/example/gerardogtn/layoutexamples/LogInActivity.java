@@ -28,7 +28,7 @@ public class LogInActivity extends AppCompatActivity{
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.friska_layout_bis);
+        setContentView(R.layout.friska_login);
         ButterKnife.inject(this);
     }
 
