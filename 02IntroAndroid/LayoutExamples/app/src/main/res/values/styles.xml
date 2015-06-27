@@ -54,4 +54,18 @@
     <style name="RedLargeButton" parent="LargeButton">
         <item name="android:background">@color/red_sign_in</item>
     </style>
+
+    <style name="FriskaRegistrationEditText" parent="Base.Widget.AppCompat.EditText">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+    </style>
+
+    <style name="FriskaRegistrationTextInputLayout" parent="Widget.Design.TextInputLayout">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="FriskaRegistrationTextInputLayout.Padding" parent="FriskaRegistrationTextInputLayout">
+        <item name="android:layout_marginTop">@dimen/friska_form_top_padding</item>
+    </style>
 </resources>
