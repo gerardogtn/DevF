@@ -73,22 +73,7 @@ public class FormActivity extends AppCompatActivity {
         userProfileActivity.putExtra("email", mEmail.getText().toString());
         startActivity(userProfileActivity);
     }
-
-    // REQUIRES: None.
-    // MODIFIES: None.
-    // EFFECTS: Returns true if no EditText is empty and both passwords are equal.
-    private boolean isInputValid() {
-        boolean output;
-        output = !mFirstName.getText().toString().isEmpty();
-        output = output && !mLastName.getText().toString().isEmpty();
-        output = output && !mPassword1.getText().toString().isEmpty();
-        output = output && !mPassword2.getText().toString().isEmpty();
-        output = output && (mPassword1.getText().toString().equals(mPassword2.getText().toString()));
-        output = output && !mPhoneNumber.getText().toString().isEmpty();
-        output = output && !mEmail.getText().toString().isEmpty();
-
-        return output;
-    }
+    
 
     // REQUIRES: None.
     // MODIFIES: None.
