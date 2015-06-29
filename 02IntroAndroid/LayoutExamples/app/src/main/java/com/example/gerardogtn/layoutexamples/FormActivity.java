@@ -7,6 +7,8 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
+import java.util.ArrayList;
+
 import butterknife.ButterKnife;
 import butterknife.InjectView;
 import butterknife.OnClick;
@@ -17,25 +19,28 @@ import butterknife.OnClick;
 public class FormActivity extends AppCompatActivity {
 
     @InjectView(R.id.btn_create_sign_in)
-    private Button mCreateSignIn;
+    public Button mCreateSignIn;
 
     @InjectView(R.id.etxt_first_name)
-    private EditText mFirstName;
+    public EditText mFirstName;
 
     @InjectView(R.id.etxt_last_name)
-    private EditText mLastName;
+    public EditText mLastName;
+
+    @InjectView(R.id.etxt_username)
+    public EditText mUserName;
 
     @InjectView(R.id.etxt_password1)
-    private EditText mPassword1;
+    public EditText mPassword1;
 
     @InjectView(R.id.etxt_password2)
-    private EditText mPassword2;
+    public EditText mPassword2;
 
     @InjectView(R.id.etxt_phone_number)
-    private EditText mPhoneNumber;
+    public EditText mPhoneNumber;
 
     @InjectView(R.id.etxt_email)
-    private EditText mEmail;
+    public EditText mEmail;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -51,10 +56,22 @@ public class FormActivity extends AppCompatActivity {
         } else if (!doPasswordsMatch()){
             Toast.makeText(this, "Passwords do not match", Toast.LENGTH_SHORT).show();
         } else{
-            Intent homeActivity = new Intent(this, HomeActivity.class);
-            startActivity(homeActivity);
+            goToUserProfile();
         }
 
+    }
+
+    // REQUIRES: None.
+    // MODIFIES: None.
+    // EFFECTS: Goes to UserProfileActivity, passing all data in edit texts.
+    private void goToUserProfile(){
+        Intent userProfileActivity = new Intent(FormActivity.this, UserProfileActivity.class);
+        userProfileActivity.putExtra("first_name", mFirstName.getText().toString());
+        userProfileActivity.putExtra("last_name", mLastName.getText().toString());
+        userProfileActivity.putExtra("username", mUserName.getText().toString());
+        userProfileActivity.putExtra("phone", mPhoneNumber.getText().toString());
+        userProfileActivity.putExtra("email", mEmail.getText().toString());
+        startActivity(userProfileActivity);
     }
 
     // REQUIRES: None.
