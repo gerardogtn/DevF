@@ -19,7 +19,7 @@
     <style name="Friska" parent="Theme.AppCompat.Light.DarkActionBar">
         <item name="colorPrimary">@color/primary_mc</item>
         <item name="colorPrimaryDark">@color/primary_dark_mc</item>
-        <item name="colorAccent">@color/accent_mc</item>
+        <item name="colorAccent">@color/green_create_account</item>
         <item name="android:navigationBarColor" tools:targetApi="21">@color/primary_dark_mc</item>
         <item name="android:textColorPrimary">@color/primary_text_mc</item>
         <item name="android:textColorSecondary">@color/secondary_text_mc</item>
