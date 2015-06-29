@@ -2,7 +2,6 @@ package com.example.gerardogtn.layoutexamples;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.widget.EditText;
@@ -48,7 +47,6 @@ public class UserProfileActivity extends AppCompatActivity {
     // REQUIRES: Intent has all fields.
     // MODIFIES: this.
     // EFFECTS: Fills all the EditText fields with the info passed by the intent.
-    @Nullable
     private void fillFields(){
         Intent source = getIntent();
         abstractSetText(mFirstName, source, "first_name");
