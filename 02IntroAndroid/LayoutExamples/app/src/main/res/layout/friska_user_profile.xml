@@ -2,7 +2,8 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    android:background="#FFFFFF">
 
     <FrameLayout
         android:layout_width="match_parent"
@@ -13,12 +14,12 @@
         <View
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:background="#666666" />
+            android:background="#9E9E9E" />
 
         <ImageView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:contentDescription="user_profile_picture"
+            android:contentDescription="@string/user_profile_picture"
             android:scaleType="centerInside"
             android:src="@drawable/what_song_logo" />
 
@@ -27,7 +28,8 @@
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="0.7">
+        android:layout_weight="0.7"
+        android:layout_margin="@dimen/activity_vertical_margin">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -69,7 +71,8 @@
 
             </LinearLayout>
 
-            <android.support.design.widget.TextInputLayout style="@style/FriskaRegistrationTextInputLayout.Padding">
+            <android.support.design.widget.TextInputLayout
+                style="@style/FriskaRegistrationTextInputLayout.Padding">
 
                 <EditText
                     android:id="@+id/etxt_up_username"
@@ -80,7 +83,8 @@
             </android.support.design.widget.TextInputLayout>
 
 
-            <android.support.design.widget.TextInputLayout style="@style/FriskaRegistrationTextInputLayout.Padding">
+            <android.support.design.widget.TextInputLayout
+                style="@style/FriskaRegistrationTextInputLayout.Padding">
 
                 <EditText
                     android:id="@+id/etxt_up_phone"
@@ -89,7 +93,8 @@
                     android:inputType="phone" />
             </android.support.design.widget.TextInputLayout>
 
-            <android.support.design.widget.TextInputLayout style="@style/FriskaRegistrationTextInputLayout.Padding">
+            <android.support.design.widget.TextInputLayout
+                style="@style/FriskaRegistrationTextInputLayout.Padding">
 
                 <EditText
                     android:id="@+id/etxt_up_email"
