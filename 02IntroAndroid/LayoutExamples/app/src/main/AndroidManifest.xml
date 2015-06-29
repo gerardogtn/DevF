@@ -24,6 +24,10 @@
             android:label="Sign up"/>
 
         <activity
+            android:name=".UserProfileActivity"
+            android:label="User Profile"/>
+
+        <activity
             android:name=".HomeActivity"
             android:label="Home"/>
 
