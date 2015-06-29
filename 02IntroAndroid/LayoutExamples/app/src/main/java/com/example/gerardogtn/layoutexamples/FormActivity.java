@@ -16,13 +16,26 @@ import butterknife.OnClick;
  */
 public class FormActivity extends AppCompatActivity {
 
-    @InjectView(R.id.btn_create_sign_in) public Button mCreateSignIn;
-    @InjectView(R.id.etxt_first_name) public EditText mFirstName;
-    @InjectView(R.id.etxt_last_name) public EditText mLastName;
-    @InjectView(R.id.etxt_password1) public EditText mPassword1;
-    @InjectView(R.id.etxt_password2) public EditText mPassword2;
-    @InjectView(R.id.etxt_phone_number) public EditText mPhoneNumber;
-    @InjectView(R.id.etxt_email) public EditText mEmail;
+    @InjectView(R.id.btn_create_sign_in)
+    private Button mCreateSignIn;
+
+    @InjectView(R.id.etxt_first_name)
+    private EditText mFirstName;
+
+    @InjectView(R.id.etxt_last_name)
+    private EditText mLastName;
+
+    @InjectView(R.id.etxt_password1)
+    private EditText mPassword1;
+
+    @InjectView(R.id.etxt_password2)
+    private EditText mPassword2;
+
+    @InjectView(R.id.etxt_phone_number)
+    private EditText mPhoneNumber;
+
+    @InjectView(R.id.etxt_email)
+    private EditText mEmail;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
