@@ -56,6 +56,16 @@
                 style="@style/FriskaRegistrationTextInputLayout.Padding">
                 <EditText
                     style="@style/FriskaRegistrationEditText"
+                    android:id="@+id/etxt_username"
+                    android:hint="@string/username"
+                    android:inputType="text" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                style="@style/FriskaRegistrationTextInputLayout.Padding">
+                <EditText
+                    style="@style/FriskaRegistrationEditText"
                     android:id="@+id/etxt_password1"
                     android:hint="@string/password"
                     android:inputType="textPassword" />
