@@ -21,6 +21,7 @@
     <string name="last_name">Last name</string>
     <string name="sign_in">Sign in</string>
     <string name="create_and_signin">Create account and sign in</string>
+    <string name="user_profile_picture">user_profile_picture</string>
 
     <string-array name="music_providers">
         <item>Itunes</item>
