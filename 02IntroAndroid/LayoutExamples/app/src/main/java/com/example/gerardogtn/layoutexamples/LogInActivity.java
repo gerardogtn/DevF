@@ -34,7 +34,7 @@ public class LogInActivity extends AppCompatActivity{
 
     @OnClick(R.id.txt_forgot_password)
     public void forgotPassword(){
-        Toast.makeText(this, "Imprimiendo con ButterKnife.", Toast.LENGTH_SHORT).show();
+        Toast.makeText(this, " -.- ", Toast.LENGTH_SHORT).show();
     }
 
     @OnClick(R.id.btn_create_account)
