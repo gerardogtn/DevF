@@ -8,7 +8,7 @@
         android:layout_width="0dp"
         android:layout_height="match_parent"
         android:layout_weight="0.33"
-        android:contentDescription="Bulbasaur"
+        android:contentDescription="@string/bulbasaur"
         android:scaleType="centerInside"
         android:src="@drawable/bulbasaur"
         android:layout_marginRight="@dimen/activity_vertical_margin"/>
@@ -17,7 +17,7 @@
         android:layout_width="0dp"
         android:layout_height="match_parent"
         android:layout_weight="0.33"
-        android:contentDescription="Charmander"
+        android:contentDescription="@string/charmander"
         android:scaleType="centerInside"
         android:src="@drawable/charmander"
         android:layout_marginRight="@dimen/activity_vertical_margin"/>
@@ -26,7 +26,7 @@
         android:layout_width="0dp"
         android:layout_height="match_parent"
         android:layout_weight="0.33"
-        android:contentDescription="Squirtle"
+        android:contentDescription="@string/squirtle"
         android:scaleType="centerInside"
         android:src="@drawable/squirtle" />
 
