@@ -5,11 +5,21 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.support.v4.app.Fragment;
+import android.widget.ImageView;
+import android.widget.TextView;
 
 import com.example.gerardogtn.introfragments.R;
 
+import butterknife.Bind;
+
 
 public class DynamicFragment extends Fragment {
+
+    @Bind(R.id.detail_image)
+    public ImageView detailImage;
+
+    @Bind(R.id.detail_text)
+    public TextView detailText;
 
     String name;
     int attack;

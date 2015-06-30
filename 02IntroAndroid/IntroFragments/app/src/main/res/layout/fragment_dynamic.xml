@@ -9,6 +9,7 @@
 
 
     <ImageView
+        android:id="@+id/detail_image"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="0.7"
@@ -17,6 +18,7 @@
         android:src="@drawable/squirtle" />
 
     <TextView
+        android:id="@+id/detail_text"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="0.3"

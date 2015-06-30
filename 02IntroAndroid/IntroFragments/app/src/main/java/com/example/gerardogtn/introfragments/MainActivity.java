@@ -18,7 +18,7 @@ public class MainActivity extends AppCompatActivity {
 
     private void addDynamicFragment(){
         FragmentTransaction tm = getSupportFragmentManager().beginTransaction();
-        tm.add(R.id.dynamic_fragment, DynamicFragment.getInstance("Squirtle", 87));
+        tm.add(R.id.dynamic_fragment, DynamicFragment.getInstance("Charizard", 23));
         tm.commit();
     }
 

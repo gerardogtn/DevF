@@ -16,11 +16,11 @@
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="0.75"
-        android:layout_marginBottom="@dimen/activity_horizontal_margin"/>
+        android:layout_margin="@dimen/activity_horizontal_margin"/>
 
 
     <fragment
-        android:layout_marginTop="@dimen/activity_horizontal_margin"
+        android:layout_margin="@dimen/activity_horizontal_margin"
         android:name="com.example.gerardogtn.introfragments.fragment.StaticFragment"
         android:layout_width="match_parent"
         android:layout_height="0dp"

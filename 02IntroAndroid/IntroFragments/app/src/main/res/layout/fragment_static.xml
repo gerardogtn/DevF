@@ -10,7 +10,8 @@
         android:layout_weight="0.33"
         android:contentDescription="Bulbasaur"
         android:scaleType="centerInside"
-        android:src="@drawable/bulbasaur" />
+        android:src="@drawable/bulbasaur"
+        android:layout_marginRight="@dimen/activity_vertical_margin"/>
 
     <ImageView
         android:layout_width="0dp"
@@ -18,7 +19,8 @@
         android:layout_weight="0.33"
         android:contentDescription="Charmander"
         android:scaleType="centerInside"
-        android:src="@drawable/charmander" />
+        android:src="@drawable/charmander"
+        android:layout_marginRight="@dimen/activity_vertical_margin"/>
 
     <ImageView
         android:layout_width="0dp"
