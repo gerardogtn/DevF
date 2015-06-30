@@ -1,0 +1,30 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:gravity="center|center"
+    android:orientation="vertical"
+    tools:context="com.example.gerardogtn.introfragments.fragment.DynamicFragment">
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.7"
+        android:contentDescription="Pokemon image"
+        android:scaleType="centerInside"
+        android:src="@drawable/squirtle" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.3"
+        android:contentDescription="Pokemon description"
+        android:gravity="center|center"
+        android:text="Ataque: 87"
+        android:textColor="#212121"
+        android:textSize="16sp" />
+
+
+</LinearLayout>
