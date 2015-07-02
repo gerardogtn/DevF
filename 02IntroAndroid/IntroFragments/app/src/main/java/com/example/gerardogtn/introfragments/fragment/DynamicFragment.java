@@ -26,6 +26,10 @@ public class DynamicFragment extends Fragment {
 
     public DynamicFragment(){}
 
+    public static DynamicFragment getInstance(){
+        return getInstance("", -1);
+    }
+
     // REQUIRES: None.
     // MODIFIES: this.
     // EFFECTS: Returns a new DynamicFragment with name name and attack atk.
@@ -57,9 +61,15 @@ public class DynamicFragment extends Fragment {
     }
 
 
+    public void setName(String name){
+        this.name = name;
+    }
 
+    public void setAttack(int atk){
+        this.attack = atk;
+    }
 
-    private void drawPokemon() {
+    public void drawPokemon() {
         setAttackText();
         if (name.toLowerCase().equals("squirtle")){
             drawSquirtle();
