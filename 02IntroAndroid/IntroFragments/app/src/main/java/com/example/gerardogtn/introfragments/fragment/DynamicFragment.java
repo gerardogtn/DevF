@@ -5,13 +5,22 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.support.v4.app.Fragment;
+import android.widget.ImageView;
+import android.widget.TextView;
 
 import com.example.gerardogtn.introfragments.R;
 
+import butterknife.Bind;
+import butterknife.ButterKnife;
 
 
 public class DynamicFragment extends Fragment {
 
+
+    @Bind(R.id.detail_image)
+    ImageView pokemonImage;
+    @Bind(R.id.detail_text)
+    TextView pokemonText;
     String name;
     int attack;
 
@@ -31,17 +40,59 @@ public class DynamicFragment extends Fragment {
 
 
     @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container,
-                             Bundle savedInstanceState) {
-        return inflater.inflate(R.layout.fragment_dynamic, container, false);
-    }
-
-
-    @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         Bundle args = getArguments();
         this.name = args.getString("name", "Sin nombre.");
         this.attack = args.getInt("attack", 0);
+    }
+
+    @Override
+    public View onCreateView(LayoutInflater inflater, ViewGroup container,
+                             Bundle savedInstanceState) {
+        View root =  inflater.inflate(R.layout.fragment_dynamic, container, false);
+        ButterKnife.bind(this, root);
+        drawPokemon();
+        return root;
+    }
+
+
+
+
+    private void drawPokemon() {
+        setAttackText();
+        if (name.toLowerCase().equals("squirtle")){
+            drawSquirtle();
+        } else if (name.toLowerCase().equals("bulbasaur")){
+            drawBulbasaur();
+        } else if (name.toLowerCase().equals("charmander")){
+            drawCharmander();
+        } else {
+            drawNone();
+        }
+    }
+
+    private void setAttackText(){
+        if (this.attack >= 0){
+            pokemonText.setText("Ataque: " + this.attack);
+        } else {
+            pokemonText.setText("");
+        }
+    }
+
+    private void drawSquirtle() {
+        pokemonImage.setImageResource(R.drawable.squirtle);
+    }
+
+    private void drawBulbasaur(){
+        pokemonImage.setImageResource(R.drawable.bulbasaur);
+    }
+
+    private void drawCharmander(){
+        pokemonImage.setImageResource(R.drawable.charmander);
+    }
+
+    private void drawNone(){
+        pokemonImage.setImageResource(R.color.White);
     }
 }
