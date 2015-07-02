@@ -10,21 +10,31 @@ import android.widget.TextView;
 
 import com.example.gerardogtn.introfragments.R;
 
+import java.util.HashMap;
+
 import butterknife.Bind;
 import butterknife.ButterKnife;
 
 
 public class DynamicFragment extends Fragment {
 
+    HashMap<String, Integer> imageId;
 
     @Bind(R.id.detail_image)
     ImageView pokemonImage;
+
     @Bind(R.id.detail_text)
     TextView pokemonText;
+    
     String name;
     int attack;
 
-    public DynamicFragment(){}
+    public DynamicFragment(){
+        imageId = new HashMap<>();
+        imageId.put("Charmander", R.drawable.charmander);
+        imageId.put("Bulbasaur", R.drawable.bulbasaur);
+        imageId.put("Squirtle", R.drawable.squirtle);
+    }
 
     public static DynamicFragment getInstance(){
         return getInstance("", -1);
@@ -69,19 +79,31 @@ public class DynamicFragment extends Fragment {
         this.attack = atk;
     }
 
+    // REQUIRES: None.
+    // MODIFIES: this.
+    // EFFECTS: Sets pokemonText to the appropiate text and pokemonImage to the appropiate img.
     public void drawPokemon() {
         setAttackText();
-        if (name.toLowerCase().equals("squirtle")){
-            drawSquirtle();
-        } else if (name.toLowerCase().equals("bulbasaur")){
-            drawBulbasaur();
-        } else if (name.toLowerCase().equals("charmander")){
-            drawCharmander();
+        drawImage();
+    }
+
+    // REQUIRES: NONE.
+    // MODIFIES: this.
+    // EFFECTS: Gets the resource of the appropiate image through the imageId map. If a value
+    // exists, draws the appropiate image. Else draws white background.
+    private void drawImage(){
+        Integer resourceId = imageId.get(this.name);
+        if (resourceId != null) {
+            drawAbstract(resourceId);
         } else {
             drawNone();
         }
     }
 
+    // REQUIRES: None.
+    // MODIFIES: this.
+    // EFFECTS: If this.attack is positive then notifies it through the user through pokemonText.
+    //          Else sets pokemonText empty.
     private void setAttackText(){
         if (this.attack >= 0){
             pokemonText.setText("Ataque: " + this.attack);
@@ -90,19 +112,17 @@ public class DynamicFragment extends Fragment {
         }
     }
 
-    private void drawSquirtle() {
-        pokemonImage.setImageResource(R.drawable.squirtle);
+    // REQUIRES: resourceId is a valid resource.
+    // MODIFIES: this
+    // EFFECTS: Sets this.pokemonImage to the given resourceId.
+    private void drawAbstract(int resourceId){
+        pokemonImage.setImageResource(resourceId);
     }
 
-    private void drawBulbasaur(){
-        pokemonImage.setImageResource(R.drawable.bulbasaur);
-    }
-
-    private void drawCharmander(){
-        pokemonImage.setImageResource(R.drawable.charmander);
-    }
-
+    // REQUIRES: None.
+    // MODIFIES: this.
+    // EFFECTS: Sets this.pokemonImage to the color white.
     private void drawNone(){
-        pokemonImage.setImageResource(R.color.White);
+        drawAbstract(R.color.white);
     }
 }
