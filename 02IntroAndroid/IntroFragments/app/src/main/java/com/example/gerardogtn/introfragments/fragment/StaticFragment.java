@@ -41,7 +41,8 @@ public class StaticFragment extends Fragment {
             mPokemonSelected = (OnPokemonSelectedListener) activity;
         } catch (ClassCastException e) {
             throw new ClassCastException(activity.toString()
-                    + " must implement OnHeadlineSelectedListener");
+                    + " must implement OnPokemonSelectedListener in "
+                    + activity.getClass().toString());
         }
     }
 
