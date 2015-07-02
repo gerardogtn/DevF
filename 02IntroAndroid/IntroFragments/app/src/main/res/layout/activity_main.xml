@@ -10,7 +10,7 @@
     tools:context=".MainActivity"
     android:background="#FFFFFF">
 
-    <LinearLayout
+    <FrameLayout
         android:orientation="vertical"
         android:id="@+id/dynamic_fragment"
         android:layout_width="match_parent"
