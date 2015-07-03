@@ -19,8 +19,7 @@ public class HomeActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
-        layout = findViewById(R.id.home_activity);
-        toolbar = (Toolbar) findViewById(R.id.toolbar_home);
+        setUpAttributes();
         setSupportActionBar(toolbar);
     }
 
@@ -46,9 +45,14 @@ public class HomeActivity extends AppCompatActivity {
         return super.onOptionsItemSelected(item);
     }
 
+    private void setUpAttributes(){
+        layout = findViewById(R.id.home_activity);
+        toolbar = (Toolbar) findViewById(R.id.toolbar_home);
+    }
+
     // REQUIRES: None.
     // MODIFIES: None.
-    // EFFECTS: Prints the given message in a snackbar. Returns true if notification was sucesful.
+    // EFFECTS: Prints the given message in a snackbar. Returns true if notification was successful.
     private boolean sendSnackMessage(String msg){
         Snackbar.make(layout, msg, Snackbar.LENGTH_SHORT).show();
         return true;
