@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">IntroActionBar</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello">Hello</string>
+    <string name="goodbye">Goodbye</string>
+    <string name="search">Search</string>
+    <string name="shopping_cart">Shopping cart</string>
+</resources>
