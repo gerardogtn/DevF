@@ -7,4 +7,6 @@
     <string name="goodbye">Goodbye</string>
     <string name="search">Search</string>
     <string name="shopping_cart">Shopping cart</string>
+    <string name="header_background">Header background</string>
+    <string name="title_activity_main">MainActivity</string>
 </resources>

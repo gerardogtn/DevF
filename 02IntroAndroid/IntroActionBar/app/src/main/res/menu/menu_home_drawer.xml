@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group>
+        <item
+            android:id="@+id/corazon"
+            android:icon="@drawable/ic_favorite_border_black_24dp"
+            android:title="Amor"/>
+
+        <item
+            android:id="@+id/mac"
+            android:icon="@drawable/ic_laptop_mac_black_24dp"
+            android:title=";)"/>
+
+        <item
+            android:id="@+id/pinturas"
+            android:icon="@drawable/ic_palette_black_24dp"
+            android:title="Pintando"/>
+
+        <item
+            android:id="@+id/avion"
+            android:icon="@drawable/ic_flight_land_black_24dp"
+            android:title="Tirar avion"/>
+    </group>
+    
+
+</menu>
