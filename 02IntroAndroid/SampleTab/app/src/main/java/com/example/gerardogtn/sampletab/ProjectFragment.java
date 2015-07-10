@@ -12,7 +12,12 @@ import android.view.ViewGroup;
 public class ProjectFragment extends Fragment {
 
     public ProjectFragment() {
-        // Required empty public constructor
+
+    }
+
+    public static ProjectFragment newInstance(){
+        ProjectFragment fragment = new ProjectFragment();
+        return fragment;
     }
 
     @Override

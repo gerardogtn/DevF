@@ -15,6 +15,10 @@ public class PeopleFragment extends Fragment {
 
     }
 
+    public static PeopleFragment newInstance(){
+        PeopleFragment fragment = new PeopleFragment();
+        return fragment;
+    }
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,

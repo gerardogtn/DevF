@@ -12,7 +12,12 @@ import android.view.ViewGroup;
 public class MusicFragment extends Fragment {
 
     public MusicFragment() {
-        // Required empty public constructor
+
+    }
+
+    public static MusicFragment newInstance(){
+        MusicFragment fragment = new MusicFragment();
+        return fragment;
     }
 
     @Override
