@@ -1,12 +1,22 @@
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.gerardogtn.sampletab.PeopleFragment">
+    tools:context="com.example.gerardogtn.sampletab.PeopleFragment"
+    android:padding="@dimen/activity_horizontal_margin"
+    android:orientation="vertical">
 
     <TextView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="Fragment personas" />
+        android:layout_height="wrap_content"
+        android:text="Fragment personas, implementacion con ListView" />
 
-</FrameLayout>
+    <ListView
+        android:layout_marginTop="@dimen/activity_horizontal_margin"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:id="@+id/list_people"
+        android:layout_gravity="start|top" />
+
+</LinearLayout>
