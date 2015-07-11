@@ -43,7 +43,7 @@ public class HomeActivity extends AppCompatActivity {
     // EFFECTS: Adds the tabs to the viewPager.
     private void setUpViewPager(ViewPager viewPager) {
         SectionPagerAdapter adapter = new SectionPagerAdapter(getSupportFragmentManager());
-        adapter.addFragment(PeopleFragment.newInstance(), "Personas" );
+        adapter.addFragment(PersonFragment.newInstance(), "Personas" );
         adapter.addFragment(ProjectFragment.newInstance(), "Proyectos" );
         adapter.addFragment(MusicFragment.newInstance(), "Musica" );
         viewPager.setAdapter(adapter);

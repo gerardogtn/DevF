@@ -2,14 +2,14 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.gerardogtn.sampletab.PeopleFragment"
+    tools:context="com.example.gerardogtn.sampletab.PersonFragment"
     android:padding="@dimen/activity_horizontal_margin"
     android:orientation="vertical">
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Fragment personas, implementacion con ListView" />
+        android:text="Fragment personas, ListView con ViewHolder" />
 
     <ListView
         android:layout_marginTop="@dimen/activity_horizontal_margin"
