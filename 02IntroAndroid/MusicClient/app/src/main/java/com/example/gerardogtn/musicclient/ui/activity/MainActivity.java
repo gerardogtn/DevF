@@ -8,6 +8,7 @@ import android.widget.Toast;
 import com.android.volley.Request;
 import com.android.volley.Response;
 import com.android.volley.VolleyError;
+import com.android.volley.toolbox.JsonObjectRequest;
 import com.android.volley.toolbox.StringRequest;
 import com.example.gerardogtn.musicclient.R;
 import com.example.gerardogtn.musicclient.data.model.Track;
@@ -20,7 +21,7 @@ import org.json.JSONObject;
 import java.util.ArrayList;
 
 
-public class MainActivity extends AppCompatActivity implements Response.Listener<String>, Response.ErrorListener {
+public class MainActivity extends AppCompatActivity implements Response.Listener<JSONObject>, Response.ErrorListener {
 
     public static final String LOG_TAG = MainActivity.class.getSimpleName();
     public static final String URL = "";
@@ -36,14 +37,13 @@ public class MainActivity extends AppCompatActivity implements Response.Listener
     protected void onResume() {
         super.onResume();
 
-        StringRequest topTracks = new StringRequest(Request.Method.GET, URL, this, this);
+        JsonObjectRequest topTracks = new JsonObjectRequest(Request.Method.GET, URL, this, this);
         VolleySingleton.getInstance(this).addToRequestQueue(topTracks);
     }
 
     @Override
-    public void onResponse(String response) {
+    public void onResponse(JSONObject response) {
         Toast.makeText(this, "Request was succesful", Toast.LENGTH_SHORT).show();
-        Log.i(LOG_TAG, response);
 
         try {
             parseTrackArray(response);
@@ -53,11 +53,9 @@ public class MainActivity extends AppCompatActivity implements Response.Listener
         }
     }
 
-    private ArrayList<Track> parseTrackArray(String response) throws JSONException {
+    private ArrayList<Track> parseTrackArray(JSONObject response) throws JSONException {
         ArrayList<Track> output = new ArrayList<>();
-
-        JSONObject jsonResponse = new JSONObject(response);
-        JSONArray jsonTracks = jsonResponse.getJSONObject("tracks").getJSONArray("track");
+        JSONArray jsonTracks = response.getJSONObject("tracks").getJSONArray("track");
 
         for(int i = 0; i < jsonTracks.length(); i++){
             JSONObject currentJsonTrack = jsonTracks.getJSONObject(i);
