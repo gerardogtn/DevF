@@ -24,7 +24,7 @@ import java.util.ArrayList;
 public class MainActivity extends AppCompatActivity implements Response.Listener<JSONObject>, Response.ErrorListener {
 
     public static final String LOG_TAG = MainActivity.class.getSimpleName();
-    public static final String URL = "";
+    public static final String URL = "a";
 
 
     @Override
@@ -73,12 +73,12 @@ public class MainActivity extends AppCompatActivity implements Response.Listener
     // MODIFIES: None.
     // Returns: If input is valid, returns a new Track with the info from the JSON objects.
     //          Otherwise, throws a JSONException.
-    private Track parseTrack(JSONObject currentJsonTrack, JSONObject artist) throws JSONException {
+    private Track parseTrack(JSONObject jsonTrack, JSONObject artist) throws JSONException {
         Track output = new Track();
-        output.setName(currentJsonTrack.getString("name"));
-        output.setDuration(robustParseInt(currentJsonTrack.getString("duration")));
-        output.setPlayCount(robustParseInt(currentJsonTrack.getString("playcount")));
-        output.setListeners(robustParseInt(currentJsonTrack.getString("listeners")));
+        output.setName(jsonTrack.getString("name"));
+        output.setDuration(robustParseInt(jsonTrack.getString("duration")));
+        output.setPlayCount(robustParseInt(jsonTrack.getString("playcount")));
+        output.setListeners(robustParseInt(jsonTrack.getString("listeners")));
         output.setArtistName(artist.getString("name"));
 
         return output;
