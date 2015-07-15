@@ -1,16 +1,28 @@
 package com.example.gerardogtn.musicclient.data.model;
 
+import com.google.gson.annotations.SerializedName;
+
+import java.util.ArrayList;
+
 /**
  * Created by gerardogtn on 7/13/15.
  */
 public class Track {
 
+    @SerializedName("name")
     private String name;
-    private int duration;
-    private String artistName;
-    private int playCount;
-    private int listeners;
 
+    @SerializedName("duration")
+    private String duration;
+
+    @SerializedName("artist")
+    private Artist artist;
+
+    @SerializedName("playcount")
+    private int playCount;
+
+    @SerializedName("listeners")
+    private int listeners;
 
 
     public String getName() {
@@ -21,20 +33,34 @@ public class Track {
         this.name = name;
     }
 
-    public int getDuration() {
-        return duration;
+    public String getDuration() {
+        String output;
+        if (duration.isEmpty() || duration == null){
+            output =  "No duration available";
+        } else{
+            int duration = Integer.parseInt(this.duration);
+            int minutes = duration / 60;
+            int seconds = duration % 60;
+
+            if (seconds < 10){
+                output = minutes + ":0" + seconds;
+            } else {
+                output = minutes + ":" + seconds;
+            }
+        }
+        return output;
     }
 
-    public void setDuration(int duration) {
+    public void setDuration(String duration) {
         this.duration = duration;
     }
 
-    public String getArtistName() {
-        return artistName;
+    public Artist getArtist() {
+        return artist;
     }
 
-    public void setArtistName(String artistName) {
-        this.artistName = artistName;
+    public void setArtist(Artist artist) {
+        this.artist = artist;
     }
 
     public int getPlayCount() {
@@ -53,12 +79,17 @@ public class Track {
         this.listeners = listeners;
     }
 
+    public String getArtistName(){
+        return artist.getName();
+    }
+
+
     @Override
     public String toString() {
         return "Track{" +
                 "name='" + name + '\'' +
                 ", duration='" + duration + '\'' +
-                ", artistName='" + artistName + '\'' +
+                ", artist=" + artist.toString() +
                 ", playCount=" + playCount +
                 ", listeners=" + listeners +
                 '}';
