@@ -1,10 +1,9 @@
-package com.example.gerardogtn.musicclient.util;
+package com.example.gerardogtn.musicclient.data.remote;
 
-import com.example.gerardogtn.musicclient.util.model.TopArtistsResponse;
-import com.example.gerardogtn.musicclient.util.model.TopTracksResponse;
+import com.example.gerardogtn.musicclient.util.ApiConstants;
+import com.example.gerardogtn.musicclient.data.model.TopArtistsResponse;
+import com.example.gerardogtn.musicclient.data.model.TopTracksResponse;
 
-
-import java.util.concurrent.Callable;
 
 import retrofit.Callback;
 import retrofit.http.GET;

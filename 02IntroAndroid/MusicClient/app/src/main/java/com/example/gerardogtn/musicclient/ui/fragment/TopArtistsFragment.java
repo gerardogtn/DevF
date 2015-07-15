@@ -1,6 +1,5 @@
 package com.example.gerardogtn.musicclient.ui.fragment;
 
-import android.content.Context;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
@@ -15,8 +14,8 @@ import com.example.gerardogtn.musicclient.BuildConfig;
 import com.example.gerardogtn.musicclient.R;
 import com.example.gerardogtn.musicclient.data.model.Artist;
 import com.example.gerardogtn.musicclient.ui.adapter.TopArtistAdapter;
-import com.example.gerardogtn.musicclient.util.LastFmApiClient;
-import com.example.gerardogtn.musicclient.util.model.TopArtistsResponse;
+import com.example.gerardogtn.musicclient.data.LastFmApiClient;
+import com.example.gerardogtn.musicclient.data.model.TopArtistsResponse;
 
 import java.util.ArrayList;
 import java.util.List;

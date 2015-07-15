@@ -1,4 +1,4 @@
-package com.example.gerardogtn.musicclient.util.model;
+package com.example.gerardogtn.musicclient.data.model;
 
 import com.example.gerardogtn.musicclient.data.model.Track;
 import com.google.gson.annotations.SerializedName;

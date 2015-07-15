@@ -8,39 +8,16 @@ import android.support.v4.app.FragmentPagerAdapter;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
-import android.util.Log;
-import android.util.Pair;
-import android.widget.Button;
-import android.widget.Toast;
 
-import com.android.volley.Request;
-import com.android.volley.Response;
-import com.android.volley.VolleyError;
-import com.android.volley.toolbox.JsonObjectRequest;
-import com.android.volley.toolbox.StringRequest;
-import com.example.gerardogtn.musicclient.BuildConfig;
 import com.example.gerardogtn.musicclient.R;
-import com.example.gerardogtn.musicclient.data.model.Artist;
-import com.example.gerardogtn.musicclient.data.model.Track;
 import com.example.gerardogtn.musicclient.ui.fragment.TopArtistsFragment;
 import com.example.gerardogtn.musicclient.ui.fragment.TopTracksFragment;
-import com.example.gerardogtn.musicclient.util.LastFmApiClient;
-import com.example.gerardogtn.musicclient.util.VolleySingleton;
-import com.example.gerardogtn.musicclient.util.model.TopArtistsResponse;
-import com.example.gerardogtn.musicclient.util.model.TopTracksResponse;
-
-import org.json.JSONArray;
-import org.json.JSONException;
-import org.json.JSONObject;
 
 import java.util.ArrayList;
 import java.util.List;
 
 import butterknife.Bind;
 import butterknife.ButterKnife;
-import butterknife.OnClick;
-import retrofit.Callback;
-import retrofit.RetrofitError;
 
 
 public class MainActivity extends AppCompatActivity {

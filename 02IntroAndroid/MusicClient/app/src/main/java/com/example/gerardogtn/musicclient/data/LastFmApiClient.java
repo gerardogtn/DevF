@@ -1,4 +1,7 @@
-package com.example.gerardogtn.musicclient.util;
+package com.example.gerardogtn.musicclient.data;
+
+import com.example.gerardogtn.musicclient.data.remote.LastFmApiService;
+import com.example.gerardogtn.musicclient.util.ApiConstants;
 
 import retrofit.RestAdapter;
 

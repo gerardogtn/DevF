@@ -8,9 +8,7 @@ import android.view.ViewGroup;
 import android.widget.TextView;
 
 import com.example.gerardogtn.musicclient.R;
-import com.example.gerardogtn.musicclient.data.model.Artist;
 import com.example.gerardogtn.musicclient.data.model.Track;
-import com.example.gerardogtn.musicclient.util.model.TopTracksResponse;
 
 import java.util.List;
 
